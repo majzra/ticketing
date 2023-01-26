@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 import { app } from './app';
 
 const start = async () => {
+    console.log('starting up!');
     /* Catch error before the app loads and make sure the JWT token is defined */
     if(!process.env.JWT_KEY) {
         throw new Error('Secret key not defined');
