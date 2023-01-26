@@ -2,7 +2,8 @@ name: tests-orders
 
 on:
   pull_request
-  
+    paths:
+      - 'orders/**' #only if the changes are inside the orders folder
 jobs:
   build:
     runs-on: ubuntu-latest

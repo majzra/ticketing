@@ -2,7 +2,8 @@ name: tests-tickets
 
 on:
   pull_request
-  
+    paths:
+      - 'tickets/**' #only if the changes are inside the tickets folder
 jobs:
   build:
     runs-on: ubuntu-latest

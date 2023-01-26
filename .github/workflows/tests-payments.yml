@@ -2,7 +2,8 @@ name: tests-payments
 
 on:
   pull_request
-  
+    paths:
+      - 'payments/**' #only if the changes are inside the payments folder
 jobs:
   build:
     runs-on: ubuntu-latest
